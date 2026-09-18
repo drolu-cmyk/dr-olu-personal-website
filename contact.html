@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inquire — Dr. Oluwabiyi Adeyemo</title>
+  <meta name="theme-color" content="#0F4F4A" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="mark" href="index.html">THE OLU</a>
+      <button class="menu" type="button" aria-label="Menu">☰</button>
+      <nav>
+        <a href="index.html">Index</a>
+        <a href="work.html">Work</a>
+        <a href="writing.html">Writing</a>
+        <a href="contact.html" aria-current="page">Inquire</a>
+      </nav>
+      <a class="btn write" href="contact.html">Write</a>
+    </div>
+  </header>
+  <main class="wrap section grid2">
+    <div>
+      <img class="portrait" src="https://canada.sozorock.com/images/dr-oluwabiyi-adeyemo.jpg" alt="Dr. Oluwabiyi Adeyemo" width="1500" height="1500" style="width:5rem;height:5rem;border-radius:999px;aspect-ratio:1" />
+      <p class="caps" style="margin-top:1.5rem">Inquire</p>
+      <h1>Write when the work is specific.</h1>
+      <p class="lede">Speaking, advisory, teaching, and press. State the decision, the constraint, and what a useful conversation would produce.</p>
+      <p><a href="mailto:contact@sozorockfoundation.org">contact@sozorockfoundation.org</a></p>
+      <p><a href="https://x.com/DrOluAdeyemo">X · @DrOluAdeyemo</a></p>
+      <p><a href="https://www.sozorockfoundation.org">The SozoRock Foundation</a></p>
+    </div>
+    <form action="mailto:contact@sozorockfoundation.org" method="get" enctype="text/plain">
+      <label>Name<input name="subject" required autocomplete="name" /></label>
+      <label>Organization<input name="org" autocomplete="organization" /></label>
+      <label>Context<textarea name="body" required placeholder="What decision is in front of you, and what would a useful conversation produce?"></textarea></label>
+      <button type="submit">Send inquiry</button>
+      <p style="font-size:0.8rem;color:var(--muted)">Opens your mail client to contact@sozorockfoundation.org. No mailing list.</p>
+    </form>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p class="mark">THE OLU</p>
+      <div class="legal">
+        <p>© 2026 Dr. Oluwabiyi Adeyemo.</p>
+        <p>Personal site. Institutional work lives with SozoRock.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelector(".menu")?.addEventListener("click", () => {
+      document.querySelector("nav")?.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
