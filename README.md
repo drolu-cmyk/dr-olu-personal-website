@@ -5,7 +5,7 @@ Personal site. **Strategy. Systems. Judgment.**
 Director of Strategic Initiatives, The SozoRock Foundation  
 Director of Learning, AI & Cybersecurity, SozoRockSchool
 
-Live: [drolu-cmyk.github.io/dr-olu-personal-website](https://drolu-cmyk.github.io/dr-olu-personal-website/)
+Live (after Pages is on): [drolu-cmyk.github.io/dr-olu-personal-website](https://drolu-cmyk.github.io/dr-olu-personal-website/)
 
 ## Pages
 
@@ -13,6 +13,16 @@ Live: [drolu-cmyk.github.io/dr-olu-personal-website](https://drolu-cmyk.github.i
 - [Work](work.html)
 - [Writing](writing.html)
 - [Inquire](contact.html)
+
+## Go live on GitHub Pages
+
+The files are on `main`. Pages still needs one owner click (API tokens cannot turn it on):
+
+1. Open [Settings → Pages](https://github.com/drolu-cmyk/dr-olu-personal-website/settings/pages)
+2. **Build and deployment → Source:** GitHub Actions
+3. Save. The `Deploy Pages` workflow will publish the site.
+
+Alternative: Source **Deploy from a branch**, branch `main`, folder `/ (root)`.
 
 ## Sources
 
@@ -30,4 +40,4 @@ Portrait on the static site is the official SozoRockSchool Canada photograph. St
 
 ## Deploy
 
-Static HTML at the repo root. GitHub Pages is configured from `main` via GitHub Actions (`.github/workflows/pages.yml`). Any static host works: serve the root.
+Static HTML at the repo root. Any static host works: serve the root.
